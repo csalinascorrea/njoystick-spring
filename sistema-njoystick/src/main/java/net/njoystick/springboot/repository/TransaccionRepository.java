@@ -1,5 +1,9 @@
 package net.njoystick.springboot.repository;
 
-public interface TransaccionRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import net.njoystick.springboot.model.Transaccion;
+
+public interface TransaccionRepository extends JpaRepository<Transaccion, Long>{
 
 }

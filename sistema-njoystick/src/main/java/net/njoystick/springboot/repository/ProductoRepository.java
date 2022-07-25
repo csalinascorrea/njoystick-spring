@@ -1,5 +1,9 @@
 package net.njoystick.springboot.repository;
 
-public interface ProductoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import net.njoystick.springboot.model.Producto;
+
+public interface ProductoRepository extends JpaRepository<Producto, Long>{
 
 }
