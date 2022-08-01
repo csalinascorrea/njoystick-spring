@@ -23,9 +23,9 @@ public class PlataformaServiceImpl implements PlataformaService{
 	}
 
 	@Override
+	@Transactional(readOnly=true)
 	public Plataforma findById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return plataformaRepository.findById(id).orElse(null);
 	}
 
 	@Override
