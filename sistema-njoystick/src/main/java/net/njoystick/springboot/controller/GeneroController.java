@@ -36,7 +36,7 @@ public class GeneroController {
 		return generoService.save(genero);
 	}
 	
-	@DeleteMapping("/generos{id}")
+	@DeleteMapping("/generos/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {
 		generoService.delete(id);

@@ -36,7 +36,7 @@ public class ProductoController {
 		return productoService.save(producto);
 	}
 	
-	@DeleteMapping("/productos{id}")
+	@DeleteMapping("/productos/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {
 		productoService.delete(id);

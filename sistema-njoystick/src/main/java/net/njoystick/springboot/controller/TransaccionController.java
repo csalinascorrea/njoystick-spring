@@ -37,7 +37,7 @@ public class TransaccionController {
 		return transaccionService.save(transaccion);
 	}
 	
-	@DeleteMapping("/transacciones{id}")
+	@DeleteMapping("/transacciones/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {
 		transaccionService.delete(id);
